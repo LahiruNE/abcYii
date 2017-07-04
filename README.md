@@ -12,7 +12,7 @@ A simple Student Management System developed using Yii 1.1 php framework.
 <h4>User Credential</h4>
 In order to log in to the system. You can use below credentials.
 
-UserID => admin
+UserID => admin <br>
 Password => admin
 
 If you want you can generate more users. But to create new users you have to log in first.
