@@ -172,17 +172,33 @@ div.rightMessage {
     border-right:1px solid #e5e5e5;
     }
 
-.buttons{
+.pdf{
     background-color: #edf2f4;
     border-width: 1px;
     border-style: solid;
     border-color: #a1a2a3;
     color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 120px;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    margin-top: 15px;
 }
+
+.chrome-pdf{    
+    background-color: #edf2f4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a1a2a3;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    margin-top: -38px;
+    margin-left: 150px
+}
+
 input[type="button"],
 input[type="submit"]{
   margin-left:140px; 

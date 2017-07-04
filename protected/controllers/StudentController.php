@@ -33,11 +33,11 @@ class StudentController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','invoice','view'),
+				'actions'=>array('create','update','invoice','invoicechrome','view'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','invoice','view'),
+				'actions'=>array('admin','delete','invoice','invoicechrome','view'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -162,9 +162,28 @@ class StudentController extends Controller
 			}
 		}else{
 			$this->termFee='0';
-}
+		}
 
 		$this->render('invoice', array(
+			'model'=>$model,
+		));	
+	}
+
+	public function actionInvoicechrome($id)
+	{		
+		$model=$this->loadModel($id);
+		//term fee calculation
+		if($model->paidStatus=='1'){
+			if((int)$model->grade<=5){
+				$this->termFee = '3000';
+			}else{
+				$this->termFee = '4000'; 
+			}
+		}else{
+			$this->termFee='0';
+		}
+
+		$this->render('invoice-chrome', array(
 			'model'=>$model,
 		));	
 	}

@@ -117,7 +117,7 @@ $tbl = '<table cellspacing="0" cellpadding="1" border="1">
 
 $pdf->writeHTML($tbl, true, false, false, false, '');
 
-$pdf->Output('Invoice.pdf', 'I'); 
+$pdf->Output('invoice.pdf', 'D'); 
 
 
 

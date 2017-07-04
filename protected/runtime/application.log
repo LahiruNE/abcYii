@@ -4818,3 +4818,14 @@ Stack trace:
 REQUEST_URI=/abcYii/index.php?r=site/login
 HTTP_REFERER=http://localhost/abcYii/index.php?r=site/login
 ---
+2017/07/04 22:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "invoice-chrome".' in C:\wamp64\www\abcYii\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\abcYii\framework\web\CController.php(270): CController->missingAction('invoice-chrome')
+#1 C:\wamp64\www\abcYii\framework\web\CWebApplication.php(282): CController->run('invoice-chrome')
+#2 C:\wamp64\www\abcYii\framework\web\CWebApplication.php(141): CWebApplication->runController('student/invoice...')
+#3 C:\wamp64\www\abcYii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\abcYii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/abcYii/index.php?r=student/invoice-chrome&id=2017%2F001
+HTTP_REFERER=http://localhost/abcYii/index.php?r=student/view&id=2017%2F001
+---

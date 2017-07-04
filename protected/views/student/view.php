@@ -33,4 +33,7 @@ $this->menu=array(
 	),
 )); 
 ?>
-<h4 class="buttons"><?php echo CHtml::link('Print Invoice',array('student/invoice','id'=>$model->stuId),array('target'=>'_blank'));?> </h4>
+
+<div class="pdf"><?php echo CHtml::link('Print Invoice',array('student/invoice','id'=>$model->stuId),array('target'=>'_blank'));?></div>
+<div class="chrome-pdf"><?php echo CHtml::link('Download',array('student/invoicechrome','id'=>$model->stuId));?></div>
+<div style="color:#e85a5a">Note - Viewing PDF is not supported in Chrome browser! But You can download invoice using Download button.</div>
