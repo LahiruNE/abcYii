@@ -55,7 +55,7 @@
 							'changeYear'=>true,
 							'yearRange'=>'1990:2099',
 							'minDate' => '1990-01-01', 
-							'maxDate' => '2099-12-31',
+							'maxDate' => date('Y-m-d'),
 							),
 							'htmlOptions'=>array(
 							'style'=>'height:20px;'
@@ -84,7 +84,7 @@
 							'changeYear'=>true,
 							'yearRange'=>'1990:2099',
 							'minDate' => '1990-01-01', 
-							'maxDate' => '2099-12-31',
+							'maxDate' => date('Y-m-d'),
 							),
 							'htmlOptions'=>array(
 							'style'=>'height:20px;'
