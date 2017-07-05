@@ -18,5 +18,5 @@ Password => admin
 If you want you can generate more users. But to create new users you have to log in first.
 
 <h4>Database</h4>
-Your database name should be "abc_data" and relevant sql file for the database is included in "/database" directory. 
+Your database name should be "abc_data" and relevant sql file for the database is included in "/database" directory. Database credentials are set to the default value. You may change those credentials in "database.php" in "/protected/config" directory.
 
